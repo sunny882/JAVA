@@ -7,5 +7,4 @@ public class PrintString {
 		String S="hello";
 		System.out.println(S);
 	}
-
 }
