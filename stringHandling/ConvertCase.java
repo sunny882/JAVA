@@ -51,8 +51,4 @@ public class ConvertCase
 		}
 		return g;
 	}
-	public static void main(String[] args) 
-	{
-
-	}
 }
