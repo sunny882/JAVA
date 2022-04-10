@@ -7,6 +7,6 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-		Insert.vale("student", 1, "sunny");
+		Insert.vale("student", 2, "money");
 	}
 }
