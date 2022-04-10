@@ -37,10 +37,10 @@ public class Insert {
 			int x=st.executeUpdate(str);
 			if (x==0) 
 			{
-				System.out.println("ok");
+				System.out.println("not ok");
 			}
 			else {
-				System.out.println("not ok");
+				System.out.println("ok");
 			}
 			
 		}
