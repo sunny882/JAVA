@@ -1,6 +1,6 @@
 package testing;
 import java.util.Scanner;
-import java.util.Scanner;
+
 
 public class EvenOddArray {
 	public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class EvenOddArray {
 			System.out.print("Enter element : ");
 			arr[i]=obj.nextInt();
 		}
+		obj.close();
 		System.out.println();
 		for(int i=0;i<size;i++)
 		{

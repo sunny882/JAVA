@@ -7,6 +7,7 @@ public class swap2firstandlast
 		Scanner obj =new Scanner(System.in);
 		System.out.print("Enter a number : ");
 		int num=obj.nextInt();
+		obj.close();
 		int t=num;
 		int count=0;
 		while (t>0)	{

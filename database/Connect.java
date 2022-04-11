@@ -7,7 +7,7 @@ public class Connect
 	{
 		try 
 		{
-			Class.forName("com.mysql.cj.jdbc.Driver");//load driver
+			Class.forName("com.mysql.cj.jdbc.Driver");		//load driver
 			String url="jdbc:mysql://localhost:3306/testing";
 			String username="root";
 			String password="";

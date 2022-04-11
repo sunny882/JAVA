@@ -1,7 +1,6 @@
 package database;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.Scanner;
 
@@ -9,8 +8,7 @@ public class Create
 {
 	public static void Table(String S)
 	{
-		try 
-		{
+		try	{
 			Connection conn=Connect.con();
 			Statement st=conn.createStatement();
 			String str="CREATE TABLE `"+S+"` ( `sr no` INT NULL DEFAULT NULL AUTO_INCREMENT , PRIMARY KEY (`sr no`))";
@@ -19,7 +17,8 @@ public class Create
 			{
 				System.out.println("ok");
 			}
-			else {
+			else 
+			{
 				System.out.println("not ok");
 			}
 		}
@@ -28,19 +27,19 @@ public class Create
 			System.out.println(e);
 		}
 	}
-	public static void colums(String S)
+	public static void column(String S)
 	{
 		try 
 		{
 			String nm="";
-			int ty,check,ln,x,l = 0;
+			int ty,ln,x,l=0;
 			String type = null;
 			String str;
-			for(int i=1;   ;i++) 
+			Scanner s=new Scanner(System.in);
+			for(;   ;) 
 			{
 				Connection conn=Connect.con();
 				Statement st=conn.createStatement();
-				Scanner s=new Scanner(System.in);
 				System.out.println("enter name of column");
 				nm=s.next();
 				System.out.println("enter type of column");
@@ -62,7 +61,7 @@ public class Create
 				}
 				System.out.println("Enter length");
 				ln=s.nextInt();
-				str="ALTER TABLE `"+S+"` ADD `"+nm+"` INT("+ln+");";
+				str="ALTER TABLE `"+S+"` ADD `"+nm+"` "+type+"("+ln+");";
 				x=st.executeUpdate(str);
 				if (x==0) 	
 				{
@@ -76,15 +75,13 @@ public class Create
 				System.out.println("1=Yes");
 				System.out.println("2=No");
 				l=s.nextInt();
-				if (l==1) {
-					
-				}
-				else
+				if (l!=1) 
 				{
 					break;
 				}
+				s.close();
 			}
-					}
+		}
 		catch(Exception e)
 		{
 			System.out.println(e);

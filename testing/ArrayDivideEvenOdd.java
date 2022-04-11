@@ -29,6 +29,7 @@ public class ArrayDivideEvenOdd
 				v++;
 			}
 		}
+		obj.close();
 		System.out.println("");
 		for(int i=0;i<e;i++)
 		{

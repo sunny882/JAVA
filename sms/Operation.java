@@ -19,6 +19,7 @@ public class Operation
 			obj.setRoll(roll);
 			obj.setName(name);
 			arr[i]=obj;
+			in.close();
 		}
 	}
 	static void display(Student arr[])

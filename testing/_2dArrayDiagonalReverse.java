@@ -7,7 +7,7 @@ public class _2dArrayDiagonalReverse {
 		int r=obj.nextInt();
 		System.out.print("Enter number of Columns : ");
 		int c=obj.nextInt();
-		int sum=0,x=0,y=0;
+		int sum=0;
 		int arr[][]=new int[r][c];
 		for(int i=0;i<r;i++)
 		{
@@ -16,7 +16,7 @@ public class _2dArrayDiagonalReverse {
 				System.out.print("enter value for array["+i+"]["+j+"] : ");arr[i][j]=obj.nextInt();
 			}
 		}
-		
+		obj.close();
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)

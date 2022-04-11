@@ -7,7 +7,6 @@ public class _2dArrayTranspose {
 		int r=obj.nextInt();
 		System.out.print("Enter number of Columns : ");
 		int c=obj.nextInt();
-		int sum=0,t=0;
 		int arr[][]=new int[r][c];
 		int rre[][]=new int[c][r];
 
@@ -25,8 +24,7 @@ public class _2dArrayTranspose {
 				rre[i][j]=arr[j][i];
 			}
 		}
-
-
+		obj.close();
 		System.out.print("Elements after transpose");
 		for(int i=0;i<c;i++)
 		{

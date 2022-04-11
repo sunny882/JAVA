@@ -17,5 +17,6 @@ public class array {
 		{
 			System.out.println("Element at a["+i+"] = "+arr[i]);
 		}
+		obj.close();
 	}
 }

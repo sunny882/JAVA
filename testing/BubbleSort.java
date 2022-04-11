@@ -25,6 +25,7 @@ public class BubbleSort {
 				}
 			}
 		}
+		obj.close();
 		System.out.println();
 		for(int i=0;i<size;i++)
 		{

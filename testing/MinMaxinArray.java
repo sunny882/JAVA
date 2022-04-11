@@ -23,8 +23,8 @@ public class MinMaxinArray {
 			if(min>arr[i])
 			{
 				min=arr[i];
-
 			}
+			obj.close();
 		}
 		System.out.println("Minimum of array is : "+min);
 		System.out.println("Maximum of array is : "+max);

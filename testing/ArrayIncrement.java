@@ -17,6 +17,7 @@ public class ArrayIncrement {
 		num=obj.nextInt();
 		System.out.print("enter position you want to add : ");
 		pos=obj.nextInt();
+		obj.close();
 		for(int i=size-1;i>=pos;i--)
 		{
 			arr[i+1]=arr[i];

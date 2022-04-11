@@ -7,7 +7,6 @@ public class arrayRotation {
 		Scanner obj =new Scanner(System.in);				//object creation
 		System.out.print("Enter size of array : ");
 		int size=obj.nextInt();
-		int size2=size;
 		int t=0;
 		int arr[]=new int[size];
 		for(int i=0;i<size;i++)
@@ -25,6 +24,7 @@ public class arrayRotation {
 			}
 			arr[size-1]=t;
 		}
+		obj.close();
 		for(int i=0;i<size;i++)
 		{
 			System.out.print(arr[i]+" ");

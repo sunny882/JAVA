@@ -8,7 +8,6 @@ public class _2dArrayOpposite {
 		System.out.print("Enter number of Columns : ");
 		int c=obj.nextInt();
 		int arr[][]=new int[r][c];
-		int rre[][]=new int[r][c];
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)
@@ -16,7 +15,7 @@ public class _2dArrayOpposite {
 				System.out.print("enter value for array["+i+"]["+j+"] : ");arr[i][j]=obj.nextInt();
 			}
 		}
-		
+		obj.close();
 		System.out.print("Elements after reverse");
 		for(int i=r-1;i>=0;i--)
 		{

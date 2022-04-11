@@ -15,7 +15,7 @@ public class _2dArrayReverse {
 				System.out.print("enter value for array["+i+"]["+j+"] : ");arr[i][j]=obj.nextInt();
 			}
 		}
-		
+		obj.close();
 		System.out.print("Elements after reverse");
 		for(int i=0;i<r;i++)
 		{

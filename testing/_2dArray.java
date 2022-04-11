@@ -7,7 +7,7 @@ public class _2dArray {
 		int r=obj.nextInt();
 		System.out.print("Enter number of Columns : ");
 		int c=obj.nextInt();
-		int sum=0,x=0,y=0;
+		int sum=0;
 		int arr[][]=new int[r][c];
 		for(int i=0;i<r;i++)
 		{
@@ -35,6 +35,7 @@ public class _2dArray {
 				}
 			}
 		}
+		obj.close();
 		System.out.println("\nsum of diagonal number : "+sum);
 	}
 }

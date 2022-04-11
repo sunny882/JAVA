@@ -30,5 +30,6 @@ public class ArrayDeletion {
 		else{
 			System.out.println("out of bound");
 		}
+		obj.close();
 	}
 }
