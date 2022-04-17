@@ -18,9 +18,9 @@ public class Operation
 			name=in.nextLine();
 			obj.setRoll(roll);
 			obj.setName(name);
-			arr[i]=obj;
-			in.close();
+			arr[i]=obj;	
 		}
+		in.close();
 	}
 	static void display(Student arr[])
 	{
