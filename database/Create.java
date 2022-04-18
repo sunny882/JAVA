@@ -9,8 +9,7 @@ public class Create
 	public static void Table(String S)
 	{
 		try	{
-			Connection conn=Connect.con();
-			Statement st=conn.createStatement();
+			Statement st=Connect.con().createStatement();
 			String str="CREATE TABLE `"+S+"` ( `sr no` INT NULL DEFAULT NULL AUTO_INCREMENT , PRIMARY KEY (`sr no`))";
 			int x=st.executeUpdate(str);
 			if (x==0) 
@@ -38,8 +37,7 @@ public class Create
 			Scanner s=new Scanner(System.in);
 			for(;   ;) 
 			{
-				Connection conn=Connect.con();
-				Statement st=conn.createStatement();
+				Statement st=Connect.con().createStatement();
 				System.out.println("enter name of column");
 				nm=s.next();
 				System.out.println("enter type of column");

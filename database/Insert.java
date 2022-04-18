@@ -8,8 +8,7 @@ public class Insert {
 	{
 		try 
 		{
-			Connection conn=Connect.con();
-			Statement st=conn.createStatement();
+			Statement st=Connect.con().createStatement();
 			String str="ALTER TABLE `"+S+"` ADD `id` INT(10) NOT NULL AFTER `sr no`, ADD `name` VARCHAR(255) NOT NULL AFTER `id`;";
 			int x=st.executeUpdate(str);
 			if (x==0) 
@@ -31,8 +30,7 @@ public class Insert {
 	{
 		try 
 		{
-			Connection conn=Connect.con();
-			Statement st=conn.createStatement();
+			Statement st=Connect.con().createStatement();
 			String str="INSERT INTO `"+S+"` (`sr no`, `id`, `name`) VALUES (NULL, '"+id+"', '"+name+"');";
 			int x=st.executeUpdate(str);
 			if (x==0) 
